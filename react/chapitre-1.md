@@ -51,6 +51,43 @@ React maintient un DOM en son propre
 
 **React** peut se lancer sur les deux **client** ou **server**
 
+1. Renvoie la forme du `HTML` depuis le JS venant du server
+2. Le navigateur charge tout le `HTML`
+3. Le `javascript` charge le reste de l'application
+
+#### La base du développement d'un composant
+Faire des paquets de composants les plus petits possible
+
+1. Offre une plus grande visibilité
+2. Produit un code avec une plus grande ré-utilisabilité
+3. Le futur de Javascript
+
+#### JSX - Javascript Syntax Extension
+
+* ressemble à XML
+* Définit une syntaxe familière pour définir des structures d'arbres avec des attributs
+* n'est pas obligatoire mais rend les choses plus faciles
+* Plus d'informations sur JSX plus tard
+
+#### Example simple :
+```
+var Hello = React.createClass({
+    render: function() {
+        return <div>Hello {this.props.name}</div>;
+    }
+});
+
+ReactDOM.render(
+	<Hello name="World" />,
+    document.getElementById('container')
+);
+```
+
+
+
+
+
+
  
 
 
